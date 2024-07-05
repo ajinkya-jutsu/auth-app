@@ -1,0 +1,14 @@
+<div class="form-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <label for="username">Username</label>
+      <input type="text" id="username" required>
+  
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+  
+      <button type="submit">Login</button>
+    </form>
+    <p (click)="toggleForm()">Don't have an account? Sign up here.</p>
+  </div>
+  

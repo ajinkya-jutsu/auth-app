@@ -1,0 +1,8 @@
+<div class="auth-container">
+    <div *ngIf="isLoginMode">
+        <app-login (toggle)="toggleMode()"></app-login>
+    </div>
+    <div *ngIf="!isLoginMode">
+        <app-signup (toggle)="toggleMode()"></app-signup>
+    </div>
+</div>
